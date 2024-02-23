@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwindcss CSS -->
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <!-- flowbite CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>Kelompok 1</title>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 w-full shadow-lg h-44 fixed">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="./assets/img/th.png" class="h-16" alt="HC Logo" />
+                <span class="self-center text-green-700 text-2xl font-semibold whitespace-nowrap dark:text-white">Mental Health</span>
+            </a>
+            <div class="flex md:order-2">
+                <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
+                    aria-expanded="false"
+                    class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                    </svg>
+                    <span class="sr-only">Search</span>
+                </button>
+                <div class="relative hidden md:block">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                        <span class="sr-only">Search icon</span>
+                    </div>
+                    <input type="text" id="search-navbar"
+                        class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search...">
+                </div>
+                <button data-collapse-toggle="navbar-search" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-search" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+                <div class="relative mt-3 md:hidden">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                    <input type="text" id="search-navbar"
+                        class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search...">
+                </div>
+                <ul
+                    class="flex flex-col p-2 mt-4 font-medium border border-gray-100 rounded-lg bg-green-500 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                    <li>
+                        <p class="scrol">
+                            <a href="#home" class="block py-2 px-3 text-white  rounded   md:p-0 md:dark:text-blue-500"
+                                aria-current="page">Home</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About
+                            Us</a>
+                    </li>
+                    <li>
+                        <a href="#contect"
+                            class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact
+                            Us</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Navbar End -->
+
+    <!-- Hero banner Start -->
+
+    <section id="home" class="p-20">
+        <!-- Wrapper -->
+        <div class="text-center">
+            <h1 class="font-bold  text-2xl mb-6">Selamat Datang di Mental Health, Tempat Berbagi dan Memahami Kesehatan
+                Mental.</h1>
+            <br>
+            <br>
+            <img src="./assets/img/dokter.avif" alt="" class="h-auto max-w-lg mx-auto">
+        </div>
+        <!-- wrwapper end -->
+    </section>
+
+
+    <!-- Hero banner End -->
+
+    <!-- Content Start -->
+    <section id="content" class="pl-28 pr-28">
+        <p class="text-center">Selamat Datang di Mental Health, Tempat Berbagi dan Memahami Kesehatan Mental.
+            Kesehatan mental adalah aspek penting dalam kesejahteraan kita sehari-hari. Kami di Mental Health berkomitmen
+            untuk memberikan dukungan, informasi, dan inspirasi untuk memahami dan meningkatkan kesehatan mental Anda.
+            Setiap orang memiliki perjalanan uniknya sendiri, dan di sini, kami ingin menciptakan ruang yang aman dan
+            terbuka untuk berbicara tentang tantangan, kemenangan, dan pengalaman seputar kesehatan mental. Kami percaya
+            bahwa dengan berbagi cerita, pengetahuan, dan sumber daya, kita dapat memperkuat satu sama lain.
+            Jelajahi artikel, tips kesehatan mental, dan panduan praktis yang kami sediakan. Apakah Anda mencari
+            dukungan pribadi, informasi terkini, atau sekadar ingin memahami lebih dalam tentang kesehatan mental, Anda
+            berada di tempat yang tepat.
+            Ingatlah bahwa perjalanan menuju kesehatan mental yang lebih baik adalah proses, dan Anda tidak sendirian.
+            Kami bersama-sama membangun masyarakat yang peduli dan mendukung kesehatan mental.
+            Mari kita bersama-sama menjadikan kesehatan mental sebagai prioritas dan membangun fondasi kebahagiaan yang
+            kokoh. Terima kasih telah bergabung di Mental Health.
+            Dengan kasih,
+            Tim Mental Health
+        </p>
+    </section><br>
+</div>
+    <hr class="bg-black">
+
+    <!-- Content 2 Start -->
+    <section id="about" class="p-20 bg-gradient-to-r from-teal-300 via-blue-300 to-indigo-300 p-8">
+        <h1 class="text-center font-bold text-2xl pt-16">Mengenal Lebih Jauh Beberapa Kondisi Kesehatan Mental</h1>
+        <p class="text-center p-4 pb-16">Simak sejumlah istilah dan kondisi menyangkut kesehatan mental yang
+            sering kita dengar, serta kiat agar kita dapat mendukung kesejahteraan keluarga.</p>
+            <!-- Content 2 End -->
+            
+            <!-- content 3 start -->
+            <div class="flex gap-4 text-center justify-center">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/depresi.1.jpeg" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Apa itu depresi?
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Depresi atau gangguan adalah gangguan
+                    kesehatan mental yang memengaruhi perasaan, Gejala depresi pada seseorang yabg umum adalah merasa
+                    sedih, kehilangan minat untuk melakukan aktivitas.</p>
+                    <button data-modal-target="default-modal" data-modal-toggle="default-modal"
+                    class="mx-auto my-auto block text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-400 dark:hover:bg-green-500 dark:focus:ring-green-600"
+                    type="button">
+                    Read more
+                </button>
+            </div>
+            <!-- Main modal -->
+            <div id="default-modal" tabindex="-1" aria-hidden="true"
+                class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                <div class="relative p-4 w-full max-w-2xl max-h-full">
+                    <!-- Modal content -->
+                    <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+                        <!-- Modal header -->
+                        <div
+                        class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            Apa itu depresi
+                        </h3>
+                        <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="default-modal">
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 14 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                </svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-4 md:p-5 space-y-4">
+                            <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/depresi.1.jpeg" alt="" />
+                            <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                                Depresi atau gangguan adalah gangguan kesehatan mental yang memengaruhi perasaan, Gejala
+                                depresi pada seseorang yabg umum adalah merasa sedih, kehilangan minat untuk melakukan
+                                aktivitas
+                            </p>
+                        </div>
+                        <!-- Modal footer -->
+                        <div
+                            class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                            <button data-modal-hide="default-modal" type="button"
+                                class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Close</button>
+                            <a href="https://www.halodoc.com/kesehatan/depresi" type="button"
+                                class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/kecemasan.jpg" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Apa itu kecemasan?
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Cemas merupakan perasaan gugup atau
+                    gelisah. Kadang-kadang orang akan merasa cemas saat berhadapan dengan situasi tertentu.</p>
+                    <button data-modal-target="modal-2" data-modal-toggle="modal-2"
+                    class="mx-auto my-auto block text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-400 dark:hover:bg-green-500 dark:focus:ring-green-600"
+                    type="button">
+                    Read more
+                </button>
+            </div>
+            <!-- Main modal -->
+            <div id="modal-2" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                    <!-- Modal content -->
+                    <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+                        <!-- Modal header -->
+                        <div
+                            class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                Apa itu kecemasan?
+                            </h3>
+                            <button type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                            data-modal-hide="modal-2">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                </svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-4 md:p-5 space-y-4">
+                            <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/kecemasan.jpg" alt="" />
+                            <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                                Cemas merupakan perasaan gugup atau gelisah. Kadang-kadang orang akan merasa cemas saat
+                                berhadapan dengan situasi tertentu
+                            </p>
+                        </div>
+                        <!-- Modal footer -->
+                        <div
+                            class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                            <button data-modal-hide="modal-2" type="button"
+                                class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Close</button>
+                            <a href="//www.alodokter.com/kenali-tiga-jenis-gangguan-kecemasan-dan-gejalanya"
+                                type="button"
+                                class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/biru.jpg" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Apa itu stres?
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Stres adalah suatu hal yang tidak dapat
+                    terlepas dari kehidupan sehari-hari. Semua datangnya masalah dapat menimbulkan tekanan pada diri
+                    Anda</p>
+                    <button data-modal-target="modal-3" data-modal-toggle="modal-3"
+                    class="mx-auto my-auto block text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-400 dark:hover:bg-green-500 dark:focus:ring-green-600"
+                    type="button">
+                    Read more
+                </button>
+            </div>
+            <!-- Main modal -->
+            <div id="modal-3" tabindex="-1" aria-hidden="true"
+                class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                <div class="relative p-4 w-full max-w-2xl max-h-full">
+                    <!-- Modal content -->
+                    <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+                        <!-- Modal header -->
+                        <div
+                        class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                            Apa itu setres?
+                        </h3>
+                        <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="modal-3">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-4 md:p-5 space-y-4">
+                            <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/biru.jpg" alt="" />
+                            <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                                Stres adalah suatu hal yang tidak dapat terlepas dari kehidupan sehari-hari. Semua
+                                datangnya masalah dapat menimbulkan tekanan pada diri Anda
+                            </p>
+                        </div>
+                        <!-- Modal footer -->
+                        <div
+                            class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                            <button data-modal-hide="modal-3" type="button"
+                                class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Close</button>
+                            <a href="//hellosehat.com/mental/stres/pengertian-stress/" type="button"
+                            class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</section>
+
+<!-- content 3 End -->
+<!-- Content 4 Start -->
+<hr class="bg-black">
+    <section id="content4" class="bg-gradient-to-r from-teal-300 via-blue-300 to-indigo-300 p-8">
+        <!-- wrapper -->
+        <div class="text-center p-16 ">
+            <h1 class="font-bold text-2xl">Tips menjaga kesehatan mental</h1>
+            <p class="p-8">Cari tahu bentuk dukungan yang tepat untuk kesehatan mental keluarga Anda</p>
+            <div class="flex gap-4 text-center justify-center">
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/Diskusi-01.png" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Berdiskusi
+                                tentang
+                                konflik dan perang
+                                dengan anak
+                            </h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Ada beberapa cara yang bisa
+                            dilakukan oleh orang tua untuk berbicara tentang konflik dan perang dengan anak. Yang
+                            pertama kita bisa mencari tahu tentang informasi apa yang anak ketahui dan apa yang mereka
+                            rasakan.</p>
+                        <button data-modal-target="modal-4" data-modal-toggle="modal-4"
+                            class="mx-auto my-auto block text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-400 dark:hover:bg-green-500 dark:focus:ring-green-600"
+                            type="button">
+                            Read more
+                        </button>
+                    </div>
+                    <!-- Main modal -->
+                    <div id="modal-4" tabindex="-1" aria-hidden="true"
+                        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative p-4 w-full max-w-2xl max-h-full">
+                            <!-- Modal content -->
+                            <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+                                <!-- Modal header -->
+                                <div
+                                    class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                        Berdiskusi tentang konflik dan perang dengan anak
+                                    </h3>
+                                    <button type="button"
+                                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                        data-modal-hide="modal-4">
+                                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 14 14">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                        </svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="p-4 md:p-5 space-y-4">
+                                    <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/Diskusi-01.png"
+                                        alt="" />
+                                    <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                                        Ada beberapa cara yang bisa dilakukan oleh orang tua untuk berbicara tentang
+                                        konflik dan perang dengan anak. Yang pertama kita bisa mencari tahu tentang
+                                        informasi apa yang anak ketahui dan apa yang mereka rasakan. Kita bisa melakukan
+                                        hal ini diwaktu yang tepat seperti saat makan. Kita bisa menanyakan tentang
+                                        informasi konflik dan apa yang mereka rasakan tentang konflik tersbut dengan
+                                        melakukan kegiatan yang disukai anak seperti menggambar, bercerita dan
+                                        lain-lain. Karena ada sebagian anak yang tidak tertarik untuk menceritakan
+                                        kejadian konflik. Yang kedua tetap tenang dan gunakan bahasa yang sesuai dengan
+                                        anak. Kita harus memberikan informasi secara tidak berlebihan. Karena itu bisa
+                                        membuat anak merasa ketakutan dengan situasi konflik dan bisa menimbulkan
+                                        stress. Selain itu kita juga harus bisa menjaga bahasa tubuh seperti ekspresi
+                                        wajah
+                                    </p>
+                                </div>
+                                <!-- Modal footer -->
+                                <div
+                                    class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                    <button data-modal-hide="modal-4" type="button"
+                                        class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Close</button>
+                                    <a href="https://www.unicef.org/indonesia/id/kesehatan-mental/artikel/berdiskusi-tentang-konflik-dan-perang-dengan-anak#:~:text=Pemberitaan%20tentang%20konflik%20atau%20perang%20dapat%20menyebabkan%20siapa,dan%20memberikan%20dukungan%20serta%20rasa%20nyaman%20kepada%20anak"
+                                        type="button"
+                                        class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Source</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/ibuk.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Kiat
+                                berkomunikasi
+                                dengan remaja
+                            </h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Membangun hubungan dengan remaja
+                            adalah modal penting bagi kesejahteraan mental serta pembelajaran sosial dan emosional
+                            mereka. Berikut adalah beberapa cara yang bisa kita gunakan untuk membangun hubungan dengan
+                            remaja.</p>
+                        <button data-modal-target="modal-5" data-modal-toggle="modal-5"
+                            class="mx-auto my-auto block text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-400 dark:hover:bg-green-500 dark:focus:ring-green-600"
+                            type="button">
+                            Read more
+                        </button>
+                    </div>
+                    <!-- Main modal -->
+                    <div id="modal-5" tabindex="-1" aria-hidden="true"
+                        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative p-4 w-full max-w-2xl max-h-full">
+                            <!-- Modal content -->
+                            <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+                                <!-- Modal header -->
+                                <div
+                                    class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                        Kiat berkomunikasi dengan remaja
+                                    </h3>
+                                    <button type="button"
+                                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                        data-modal-hide="modal-5">
+                                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 14 14">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                        </svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="p-4 md:p-5 space-y-4">
+                                    <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/ibuk.jpg" alt="" />
+                                    <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                                        Membangun hubungan dengan remaja adalah modal penting bagi kesejahteraan mental
+                                        serta pembelajaran sosial dan emosional mereka. Berikut adalah beberapa cara
+                                        yang bisa kita gunakan untuk membangun hubungan dengan remaja. Orang tua bisa
+                                        menunjukkan perhatian yang sesuai dengan usia remaja dan sebagai orang tua, kita
+                                        bisa mencari kesamaan dengan remaja ntah itu hobi atau apaun. Orang tua bisa
+                                        meminta pendapat, pandangan dan pemikiran tentang kita kepada anak remaja agar
+                                        orang tua dapat memahami perasaan mereka. Dan orang tua bisa melanjutkan
+                                        berkomunikasi hingga remaja tumbuh semakin dewasa.
+                                    </p>
+                                </div>
+                                <!-- Modal footer -->
+                                <div
+                                    class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                    <button data-modal-hide="modal-5" type="button"
+                                        class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Close</button>
+                                    <a href="https://www.unicef.org/indonesia/id/kesehatan-mental/artikel/tips-berkomunikasi-dengan-remaja"
+                                        type="button"
+                                        class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Source</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/tangan.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tips
+                                merawat diri
+                                untuk orang tua
+                            </h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Merawat diri bisa dilakukan dengan
+                            membangun kebiasaan baru yang awalnya mungkin sulit, tetapi lama kelamaan membuat kita
+                            terbiasa. Dan Merawat diri juga bisa dilakukan kapanpun. </p>
+                        <button data-modal-target="modal-6" data-modal-toggle="modal-6"
+                            class="mx-auto my-auto block text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-400 dark:hover:bg-green-500 dark:focus:ring-green-600"
+                            type="button">
+                            Read more
+                        </button>
+                    </div>
+                    <!-- Main modal -->
+                    <div id="modal-6" tabindex="-1" aria-hidden="true"
+                        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative p-4 w-full max-w-2xl max-h-full">
+                            <!-- Modal content -->
+                            <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+                                <!-- Modal header -->
+                                <div
+                                    class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                        Tips merawat diri untuk orang tua
+                                    </h3>
+                                    <button type="button"
+                                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                        data-modal-hide="modal-6">
+                                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 14 14">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                        </svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="p-4 md:p-5 space-y-4">
+                                    <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/tangan.jpg" alt="" />
+                                    <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                                        Merawat diri bisa dilakukan dengan membangun kebiasaan baru yang awalnya mungkin
+                                        sulit, tetapi lama kelamaan membuat kita terbiasa. Dan Merawat diri juga bisa
+                                        dilakukan kapanpun. Contoh melakukan kegiatan yang menyenangkan dengan orang
+                                        terdekat. Kita juga bisa berolahraga untuk menjadikan kegiatan tersebut sebagai
+                                        kebiasaan. Dan yang paling penting untuk orang tua, bisa mengurangi waktu
+                                        penggunaan Ponsel, dan mengambil istirahat yang cukup.
+
+                                    </p>
+                                </div>
+                                <!-- Modal footer -->
+                                <div
+                                    class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                    <button data-modal-hide="modal-5" type="button"
+                                        class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Close</button>
+                                    <a href="https://health.kompas.com/read/2021/11/07/163100968/10-cara-merawat-orangtua-agar-kesehatan-mental-tetap-terjaga?page=all"
+                                        type="button"
+                                        class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Source</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <hr class="bg-black">
+    <section id="cerita" class="bg-gradient-to-r from-teal-300 via-blue-300 to-indigo-300 p-8">
+        <!-- wrapper -->
+        <div class="text-center p-16">
+            <h1 class="font-bold text-2xl">Cerita</h1>
+            <p class="p-8">Cari tahu bentuk dukungan yang tepat untuk kesehatan mental keluarga Anda</p>
+            <div class="flex gap-4 text-center justify-center">
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/anakmuda.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Caraku
+                                mengatasi kesehatan mental
+                            </h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Pada awal memasuki sekolah smk,
+                            saya semakin susah untuk bergaul bersama siswa siswa yang lain. Setelah saya mencari
+                            informasi lebih lanjut, ternyata hal yang saya alami adalah gejala pada remaja yang terkena
+                            gangguan mental.</p>
+                        <button data-modal-target="modal-7" data-modal-toggle="modal-7"
+                            class="mx-auto my-auto block text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-400 dark:hover:bg-green-500 dark:focus:ring-green-600"
+                            type="button">
+                            Read more
+                        </button>
+                    </div>
+                    <!-- Main modal -->
+                    <div id="modal-7" tabindex="-1" aria-hidden="true"
+                        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative p-4 w-full max-w-2xl max-h-full">
+                            <!-- Modal content -->
+                            <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+                                <!-- Modal header -->
+                                <div
+                                    class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                        Caraku mengatasi kesehatan mental 
+                                    </h3>
+                                    <button type="button"
+                                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                        data-modal-hide="modal-7">
+                                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 14 14">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                        </svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="p-4 md:p-5 space-y-4">
+                                    <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/anakmuda.jpg" alt="" />
+                                    <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                                        Pada awal memasuki sekolah smk, saya semakin susah untuk bergaul bersama siswa
+                                        siswa yang lain. Setelah saya mencari informasi lebih lanjut, ternyata hal yang
+                                        saya alami adalah gejala pada remaja yang terkena gangguan mental. Salah satu
+                                        faktor utamanya adalah kurangnya/tidak minat dalam bersosialisasi. Sehingga itu
+                                        menyebabkan saya sulit untuk bergaul dengan orang sebaya. Lalu saya berfikir
+                                        "wah kalau seperti ini aku gabakalan bisa berkembang kedepannya". Nah, saya
+                                        menemukan solusi untuk mengatasi hal diatas. Saya mencoba untuk memberanikan
+                                        diri untuk lebih dekat dengan orang lain/mencoba bersosialisasi. Seperti
+                                        mengikuti exkul disekolah dan mengikuti acara yang diadakan di kelas. Dan saya
+                                        mulai terbiasa untuk bersosialisasi dengan teman teman saya. Jadi untuk teman
+                                        teman semua jangan ragu untuk mencoba bersosialisasi, karena hal itu mempunyai
+                                        pengaruh yang besar untuk kita kedepannya.
+                                    </p>
+                                </div>
+                                <!-- Modal footer -->
+                                <div
+                                    class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                    <button data-modal-hide="modal-7" type="button"
+                                        class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Close</button>
+                                    <a href="https://www.prudential.co.id/id/pulse/article/cara-mengatasi-mental-health/"
+                                        type="button"
+                                        class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Source</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/cemas.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Dukunganku
+                            </h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Menurutku, keluarga dan sekolah adalah pemeran penting untuk melindungi kesehatan mental para remaja. Disaat aku mengalami tekanan mental, orang tuaku selalu menjadi pendengar yang baik.</p>
+                        <button data-modal-target="modal-8" data-modal-toggle="modal-8"
+                    class="mx-auto my-auto block text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-400 dark:hover:bg-green-500 dark:focus:ring-green-600"
+                    type="button">
+                    Read more
+         </button>
+                    </div>
+                    <!-- Main modal -->
+                    <div id="modal-8" tabindex="-1" aria-hidden="true"
+                        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative p-4 w-full max-w-2xl max-h-full">
+                            <!-- Modal content -->
+                            <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+                                <!-- Modal header -->
+                                <div
+                                    class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                        Dukunganku
+                                    </h3>
+                                    <button type="button"
+                                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                        data-modal-hide="modal-8">
+                                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 14 14">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                        </svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="p-4 md:p-5 space-y-4">
+                                    <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/cemas.jpg" alt="" />
+                                    <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                                        Menurutku, keluarga dan sekolah adalah pemeran penting untuk melindungi kesehatan mental para remaja. Disaat aku mengalami tekanan mental, orang tuaku selalu menjadi pendengar yang baik. Orang tuaku selalu mendukungku untuk tetap semangat menjalani hidup. Begitu juga disekolah, Aku sangat sering mendapatkan ejekan dari teman teman sekelasku, tetapi guruku disekolah selalu mendukung dan menyemangatiku disaat aku merenung. Dari orang tua dan guruku ada 1 hal yang bisa ku ambil yaitu adalah tetap semangat dan pantang menyerah.
+                                    </p>
+                                </div>
+                                <!-- Modal footer -->
+                                <div
+                                    class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                    <button data-modal-hide="modal-8" type="button"
+                                class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Close</button>
+                                <a href="https://www.kompasiana.com/vistha17197/652e35f4edff76204232bf92/isu-kesehatan-mental-di-kalangan-rremaja-tantangan-dan-solusi"
+                                type="button"
+                                class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Source</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/perasaaan.jpeg" alt="" />
+                    </a>
+                    <div class="p-5">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Yang Saya Rasakan (Kesehatan Mental)
+                            </h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Yang saya rasakan saat saya mengalami kesahatan mental pada usia remaja, saya merasa kehidupan saya tidak ada artinya, saya merasa tidak berdaya, saya merasa putus asa.</p>
+                        <button data-modal-target="modal-9" data-modal-toggle="modal-9"
+                        class="mx-auto my-auto block text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-400 dark:hover:bg-green-500 dark:focus:ring-green-600"
+                        type="button">
+                        Read more
+             </button>
+                    </div>
+                    <!-- Main modal -->
+                    <div id="modal-9" tabindex="-1" aria-hidden="true"
+                        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative p-4 w-full max-w-2xl max-h-full">
+                            <!-- Modal content -->
+                            <div class="relative bg-gray-200 rounded-lg shadow dark:bg-gray-700">
+                                <!-- Modal header -->
+                                <div
+                                    class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                        Yang Saya Rasakan (Kesehatan Mental)
+                                    </h3>
+                                    <button type="button"
+                                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                        data-modal-hide="modal-9">
+                                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 14 14">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                        </svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="p-4 md:p-5 space-y-4">
+                                    <img class="rounded-t-lg max-h-56 w-full" src="./assets/img/perasaaan.jpeg" alt="" />
+                                    <p class="text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                                        Yang saya rasakan saat saya mengalami kesahatan mental pada usia remaja, saya merasa kehidupan saya tidak ada artinya, saya merasa tidak berdaya, saya merasa putus asa. Setiap malam saya mendengar suara yang membisiki telinga saya untuk melakukan hal buruk. Dan saya selalu berfikir untuk menyakiti diri saya sendiri. Dan saya selalu mencoba untuk ingat kepada tuhan, doa yang ku panjatkan setiap hari tidaklah sia-sia. Saya mendapat secercah cahaya bahwa saya masih memiliki tujuan yang belum tercapai didunia ini. Sejak hari itu kesehatan mental saya mulai membaik dan bertambah baik, sampai titik dimana saya bisa mengejar tujuan saya.
+                                    </p>
+                                </div>
+                                <!-- Modal footer -->
+                                <div
+                                    class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                    <button data-modal-hide="modal-9" type="button"
+                                class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Close</button>
+                                <a href="https://lifestyle.sindonews.com/read/751627/155/13-tanda-seseorang-miliki-masalah-kesehatan-mental-1650672295"
+                                type="button"
+                                class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-green-700 rounded-lg border border-green-600 hover:bg-green-600 hover:text-white focus:z-10 focus:ring-4 focus:ring-green-500 dark:focus:ring-green-600 dark:bg-green-700 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-green-300">Source</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <hr class="bg-black">
+
+    <!-- Content 4 End -->
+    <!-- Berita Start -->
+    <section id="berita" class="p-16 flex flex-wrap justify-center">
+        <!-- Card 1 -->
+        <div class="max-w-xs mx-2 mb-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg max-h-32 w-full object-cover" src="./assets/img/nopal.png" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">DR. Nofal Hidayat</h5>
+                </a>
+                <!-- lulus -->
+                <h1 class="flex items-center ml-2 pt-3">
+                    <img src="./assets/img/graduation.png" alt="graduation" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <p class="pl-3 pb-1">Universitas Brawijaya, 2010</p>
+                </h1>
+
+                <h1 class="flex items-center ml-2 pt-3">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2a8 8 0 0 1 6.6 12.6l-.1.1-.6.7-5.1 6.2a1 1 0 0 1-1.6 0L6 15.3l-.3-.4-.2-.2v-.2A8 8 0 0 1 11.8 2Zm3 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" clip-rule="evenodd"/>
+                    </svg><p class="pl-3">Lokasi Praktik Di Malang</p>
+                </h1>
+                <h1 class="flex items-center ml-2 pt-3">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2c-2.4 0-4.7.9-6.5 2.4a10.5 10.5 0 0 0-2 13.1A10 10 0 0 0 8.7 22c.5 0 .7-.2.7-.5v-2c-2.8.7-3.4-1.1-3.4-1.1-.1-.6-.5-1.2-1-1.5-1-.7 0-.7 0-.7a2 2 0 0 1 1.5 1.1 2.2 2.2 0 0 0 1.3 1 2 2 0 0 0 1.6-.1c0-.6.3-1 .7-1.4-2.2-.3-4.6-1.2-4.6-5 0-1.1.4-2 1-2.8a4 4 0 0 1 .2-2.7s.8-.3 2.7 1c1.6-.5 3.4-.5 5 0 2-1.3 2.8-1 2.8-1 .3.8.4 1.8 0 2.7a4 4 0 0 1 1 2.7c0 4-2.3 4.8-4.5 5a2.5 2.5 0 0 1 .7 2v2.8c0 .3.2.6.7.5a10 10 0 0 0 5.4-4.4 10.5 10.5 0 0 0-2.1-13.2A9.8 9.8 0 0 0 12 2Z" clip-rule="evenodd"/>
+                    </svg><a href="https://github.com/Noffalll" class="pl-3 pb-3">github.com</a>
+                </h1>
+            </div>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="max-w-xs mx-2 mb-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg max-h-32 w-full object-cover" src="./assets/img/lhegi.png" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">DR. Lhegi Nadia</h5>
+                </a>
+                <!-- lulus -->
+                <h1 class="flex items-center ml-2 pt-3">
+                    <img src="./assets/img/graduation.png" alt="graduation" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <p class="pl-3 pb-1">VEDC, 2010</p>
+                </h1>
+                <h1 class="flex items-center ml-2 pt-3">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2a8 8 0 0 1 6.6 12.6l-.1.1-.6.7-5.1 6.2a1 1 0 0 1-1.6 0L6 15.3l-.3-.4-.2-.2v-.2A8 8 0 0 1 11.8 2Zm3 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" clip-rule="evenodd"/>
+                    </svg><p class="pl-3">Lokasi Praktik Di Malang</p>
+                </h1>
+                <h1 class="flex items-center ml-2 pt-3">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2c-2.4 0-4.7.9-6.5 2.4a10.5 10.5 0 0 0-2 13.1A10 10 0 0 0 8.7 22c.5 0 .7-.2.7-.5v-2c-2.8.7-3.4-1.1-3.4-1.1-.1-.6-.5-1.2-1-1.5-1-.7 0-.7 0-.7a2 2 0 0 1 1.5 1.1 2.2 2.2 0 0 0 1.3 1 2 2 0 0 0 1.6-.1c0-.6.3-1 .7-1.4-2.2-.3-4.6-1.2-4.6-5 0-1.1.4-2 1-2.8a4 4 0 0 1 .2-2.7s.8-.3 2.7 1c1.6-.5 3.4-.5 5 0 2-1.3 2.8-1 2.8-1 .3.8.4 1.8 0 2.7a4 4 0 0 1 1 2.7c0 4-2.3 4.8-4.5 5a2.5 2.5 0 0 1 .7 2v2.8c0 .3.2.6.7.5a10 10 0 0 0 5.4-4.4 10.5 10.5 0 0 0-2.1-13.2A9.8 9.8 0 0 0 12 2Z" clip-rule="evenodd"/>
+                    </svg><a href="https://github.com/lheginadia122" class="pl-3 pb-3">github.com</a>
+                </h1>
+            </div>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="max-w-xs mx-2 mb-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg max-h-32 w-full object-cover" src="./assets/img/putra.png" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">DR. Putra Mahardika</h5>
+                </a>
+                <!-- lulus -->
+                <h1 class="flex items-center ml-2 pt-3">
+                    <img src="./assets/img/graduation.png" alt="graduation" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <p class="pl-3 pb-1">Universitas Malang , 2010</p>
+                </h1>
+                <h1 class="flex items-center ml-2 pt-3">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2a8 8 0 0 1 6.6 12.6l-.1.1-.6.7-5.1 6.2a1 1 0 0 1-1.6 0L6 15.3l-.3-.4-.2-.2v-.2A8 8 0 0 1 11.8 2Zm3 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" clip-rule="evenodd"/>
+                    </svg><p class="pl-3">Lokasi Praktik Di Malang</p>
+                </h1>
+                <h1 class="flex items-center ml-2 pt-3">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2c-2.4 0-4.7.9-6.5 2.4a10.5 10.5 0 0 0-2 13.1A10 10 0 0 0 8.7 22c.5 0 .7-.2.7-.5v-2c-2.8.7-3.4-1.1-3.4-1.1-.1-.6-.5-1.2-1-1.5-1-.7 0-.7 0-.7a2 2 0 0 1 1.5 1.1 2.2 2.2 0 0 0 1.3 1 2 2 0 0 0 1.6-.1c0-.6.3-1 .7-1.4-2.2-.3-4.6-1.2-4.6-5 0-1.1.4-2 1-2.8a4 4 0 0 1 .2-2.7s.8-.3 2.7 1c1.6-.5 3.4-.5 5 0 2-1.3 2.8-1 2.8-1 .3.8.4 1.8 0 2.7a4 4 0 0 1 1 2.7c0 4-2.3 4.8-4.5 5a2.5 2.5 0 0 1 .7 2v2.8c0 .3.2.6.7.5a10 10 0 0 0 5.4-4.4 10.5 10.5 0 0 0-2.1-13.2A9.8 9.8 0 0 0 12 2Z" clip-rule="evenodd"/>
+                    </svg><a href="https://github.com/nver4gett" class="pl-3 pb-3">github.com</a>
+                </h1>
+            </div>
+        </div>
+    
+        <!-- Card 4 -->
+        <div class="max-w-xs mx-2 mb-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#" class="flex items-center">
+                <img class="rounded-t-lg max-h-32 w-full object-cover" src="./assets/img/titto.png" alt="" />
+            </a>
+            <div class="p-5 flex flex-col">
+                <a href="#" class="flex items-center">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">DR. Titto Rezky</h5>
+                </a>
+                <!-- lulus -->
+                <h1 class="flex items-center ml-2 pt-3">
+                    <img src="./assets/img/graduation.png" alt="graduation" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <p class="pl-3 pb-1">Binus, 2010</p>
+                </h1>
+                <h1 class="flex items-center ml-2 pt-3">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2a8 8 0 0 1 6.6 12.6l-.1.1-.6.7-5.1 6.2a1 1 0 0 1-1.6 0L6 15.3l-.3-.4-.2-.2v-.2A8 8 0 0 1 11.8 2Zm3 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" clip-rule="evenodd"/>
+                    </svg><p class="pl-3">Lokasi Praktik Di Bekasi</p>
+                </h1>
+                <h1 class="flex items-center ml-2 pt-3">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12 2c-2.4 0-4.7.9-6.5 2.4a10.5 10.5 0 0 0-2 13.1A10 10 0 0 0 8.7 22c.5 0 .7-.2.7-.5v-2c-2.8.7-3.4-1.1-3.4-1.1-.1-.6-.5-1.2-1-1.5-1-.7 0-.7 0-.7a2 2 0 0 1 1.5 1.1 2.2 2.2 0 0 0 1.3 1 2 2 0 0 0 1.6-.1c0-.6.3-1 .7-1.4-2.2-.3-4.6-1.2-4.6-5 0-1.1.4-2 1-2.8a4 4 0 0 1 .2-2.7s.8-.3 2.7 1c1.6-.5 3.4-.5 5 0 2-1.3 2.8-1 2.8-1 .3.8.4 1.8 0 2.7a4 4 0 0 1 1 2.7c0 4-2.3 4.8-4.5 5a2.5 2.5 0 0 1 .7 2v2.8c0 .3.2.6.7.5a10 10 0 0 0 5.4-4.4 10.5 10.5 0 0 0-2.1-13.2A9.8 9.8 0 0 0 12 2Z" clip-rule="evenodd"/>
+                    </svg><a href="https://github.com/tittorezky" class="pl-3 pb-3">github.com</a>
+                </h1>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    
+    
+    
+    <!-- Berita End -->
+    <!-- Content End -->
+
+    <!-- Footer Start -->
+
+    <footer class="bg-gray-800 text-white" id="contect">
+        <div class=" mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="https://flowbite.com/" class="flex items-center">
+                        <img src="./assets/img/th.png" class="h-16 me-3" alt="FlowBite Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap ">Mental Health</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-10 gap-8 sm:grid-cols-3">
+                    <div>
+                        <h1 class="mb-6 text-sm font-bold uppercase ">Beranda Health
+                            Care</h1>
+                        <ul class="font-medium">
+                            <li class="mb-4">
+                                <a href="https://flowbite.com/" class="hover:underline">Penelitian dan Laporan</a>
+                            </li>
+                            <li>
+                                <a href="#cerita" class="hover:underline">Cerita</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="mb-6 text-sm font-bold uppercase ">Tentang Kami</h1>
+                        <ul class="font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline ">Lowongan</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-medium hover:underline">Pertanyaan Umum</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <h2
+                                class="mb-6 text-sm font-bold bg-green-600 text-center text-white p-3 rounded-full uppercase ">
+                                Hubungi
+                                Kami
+                            </h2>
+                        </a>
+                        <div class="flex justify-center gap-4">
+                            <svg class="border bg-purple-700  rounded-full w-8 h-8 text-gray-800 dark:text-white"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M13.1 6H15V3h-1.9A4.1 4.1 0 0 0 9 7.1V9H7v3h2v10h3V12h2l.6-3H12V6.6a.6.6 0 0 1 .6-.6h.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <svg class="border bg-purple-700 rounded-full w-8 h-8 text-gray-800 dark:text-white"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M22 5.9c-.7.3-1.5.5-2.4.6a4 4 0 0 0 1.8-2.2c-.8.5-1.6.8-2.6 1a4.1 4.1 0 0 0-6.7 1.2 4 4 0 0 0-.2 2.5 11.7 11.7 0 0 1-8.5-4.3 4 4 0 0 0 1.3 5.4c-.7 0-1.3-.2-1.9-.5a4 4 0 0 0 3.3 4 4.2 4.2 0 0 1-1.9.1 4.1 4.1 0 0 0 3.9 2.8c-1.8 1.3-4 2-6.1 1.7a11.7 11.7 0 0 0 10.7 1A11.5 11.5 0 0 0 20 8.5V8a10 10 0 0 0 2-2.1Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <svg class="border bg-purple-700 rounded-full w-8 h-8 text-gray-800 dark:text-white"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M17.5 3A3.5 3.5 0 0 0 14 7L8.1 9.8A3.5 3.5 0 0 0 2 12a3.5 3.5 0 0 0 6.1 2.3l6 2.7-.1.5a3.5 3.5 0 1 0 1-2.3l-6-2.7a3.5 3.5 0 0 0 0-1L15 9a3.5 3.5 0 0 0 6-2.4c0-2-1.6-3.5-3.5-3.5Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- JS Area -->
+
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>
